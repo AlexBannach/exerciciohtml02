@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 06</title>
+    <style>
+      
+ 
+ input[type=text], input[type=number]{   
+     border-radius:4px;
+     border:1px solid #000000;
+    
+ }
+  
+ textarea{
+     border: 1px solid #000000;
+     background:#cccccc;
+     width:150px;
+     height:100px;
+     border-radius:4px;
+     -moz-border-radius:4px;
+     -webkit-border-radius:4px;
+     
+   }
+   fieldset{
+   width:400px;
+   height:70px;
+   
+   border-color: black;
+  
+ }
+ legend
+ {
+   font-style:bold;
+   font-family: "Segoe UI";
+ }
+ .row {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    <form action="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <div >
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="Informe o nome">
+                </div>
+                <div >
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade">
+                </div>
+            </div>
+        </fieldset>
+        <div>
+            <fieldset>
+                <legend>Dados Profissionais</legend>
+                <div>
+                    <label for="escolaridade">Escolaridade:</label>
+                    <select name="escolaridade" id="escolaridade">
+                        <option value="">Selecione uma escolaridade....</option>
+                        <option value="Ensino Fundamental">Ensino Fundamental</option>
+                        <option value="Ensino Medio">Ensino Medio</option>
+                        <option value="Ensino Superior">Ensino Superior</option>
+                        <option value="Ensino Fundamental Incompleto">Ensino Fundamental Incompleto</option>
+                        <option value="Ensino Medio Incompleto">Ensino Medio Incompleto</option>
+                        <option value="Ensino Superior Incompleto">Ensino Superior Incompleto</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="atuacao">Área de atuação</label>
+                    <input type="radio" name="atuacao" value="atuacao">
+                    <label for="gerencia">Gerência</label>
+                    <input type="radio" name="gerencia" value="atuacao">
+                    <label for="recepcao">Recepção</label>
+                    <input type="radio" name="recepcao">
+                </div>
+            </fieldset>
+        </div>
+    </form>
+</body>
+</html>
